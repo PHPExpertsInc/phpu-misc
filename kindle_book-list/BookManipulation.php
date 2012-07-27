@@ -47,10 +47,10 @@ class BookManipulation extends HtmlOutput
             
             $this -> replacePattern = '/[(|)]/U';
             $this -> replace = '';
-            //use preg replace now for replace () and ||
             
-            $this -> matches = $this -> preg_replace_multi_array($this->replacePattern, $this->replace, $this->matches);
-            //preg_replace_array($this -> replacePattern, '', $this -> matches);
+//use preg replace now for replace () and ||
+            
+            $this -> preg_replace_multi_array($this->replacePattern, $this->replace, $this->matches);
             
             var_dump($this -> matches);
             
