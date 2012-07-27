@@ -62,6 +62,8 @@ class BookManipulation extends HtmlOutput
             
             var_dump($this -> flatlocationAuthorArray);           
             
+            
+            
         }
         else 
         {
