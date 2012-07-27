@@ -49,7 +49,7 @@ class BookManipulation extends HtmlOutput
             preg_match_all($this -> locationAuthorDelim, $this -> bufferstring, 
                      $this -> locationAuthorArray, PREG_PATTERN_ORDER);
             
-            $this -> flatLocationAuthorArray = $this -> flattenArray($this -> locationAuthorArray);
+            $this -> flatLocationAuthorArray = flattenArray($this -> locationAuthorArray);
 
 //TODO: figure this out!!!!
             //repalce symbols 
@@ -82,27 +82,6 @@ class BookManipulation extends HtmlOutput
         //parent::createQuote();
     }  
     
-    protected function flattenArray($multi_array)
-    {
-        $flat_array = array();
-        foreach(new RecursiveIteratorIterator(new RecursiveArrayIterator($multi_array)) as $k => $v)
-        {
-            $flat_array[$k] = $v;
-        }
-        return $flat_array;
-    }
-    
-//    function array_flatten($nested, $preserve_keys = false) {
-//$flat = array();
-//$collector = $preserve_keys ? function ($v, $k) use (&$flat) {
-//$flat[$k] = $v;
-//} : function ($v) use (&$flat) {
-//        $flat[] = $v;
-//};
-//array_walk_recursive($nested);
-//return $flat;
-//}
-    
     protected function createfalse($input)
         {
             $exclude = '==========';
@@ -120,4 +99,12 @@ class BookManipulation extends HtmlOutput
     
 }
 
-?>                                                                              
+function flattenArray($multi_array)
+{
+    $flat_array = array();
+    foreach(new RecursiveIteratorIterator(new RecursiveArrayIterator($multi_array)) as $k => $v)
+    {
+        $flat_array[$k] = $v;
+    }
+    return $flat_array();
+}
