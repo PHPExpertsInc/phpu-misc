@@ -62,8 +62,7 @@ class BookManipulation extends HtmlOutput
             
             var_dump($this -> flatlocationAuthorArray);           
             
-            
-            
+                      
         }
         else 
         {
@@ -90,7 +89,7 @@ class BookManipulation extends HtmlOutput
         {
             $flat_array[$k] = $v;
         }
-        return $flat_array();
+        return $flat_array;
     }
     
 //    function array_flatten($nested, $preserve_keys = false) {
