@@ -24,8 +24,7 @@ class FileWork extends DetectFileType
     protected function reader()
     {    
         $this -> filename = $this -> inputFile;
-        var_dump($this -> filename);
-        
+                
         if (file_exists($this -> filename) == FALSE)
         {
             $this -> errlog = 'the File does not exist.';

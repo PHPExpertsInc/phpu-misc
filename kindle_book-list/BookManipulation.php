@@ -43,18 +43,21 @@ class BookManipulation extends HtmlOutput
             
             $this -> locationAuthorDelim = '/(?:\(.+\)|\|.+\|)/U';
             
-            preg_match_all($this -> locationAuthorDelim, $this -> bufferstring, $this -> matches, PREG_PATTERN_ORDER);
+            //creates multidimentional array, need to either flatten or ... something.
+            
+            preg_match_all($this -> locationAuthorDelim, $this -> bufferstring, 
+                     $this -> locationAuthorArray, PREG_PATTERN_ORDER);
+            
+            //TODO: figure this out!!!!
+            //repalce symbols 
             
             $this -> replacePattern = '/[(|)]/U';
             $this -> replace = '';
+                      
+            //use preg replace now for replace () and ||
+            preg_replace($this->replacePattern, $this->replace, $this->locationAuthorArray);
             
-//use preg replace now for replace () and ||
-            
-            $this -> preg_replace_multi_array($this->replacePattern, $this->replace, $this->matches);
-            
-            var_dump($this -> matches);
-            
-                       
+            var_dump($this -> locationAuthorArray);           
             
         }
         else 
@@ -75,8 +78,28 @@ class BookManipulation extends HtmlOutput
         //parent::createAuthor();
         //parent::createQuote();
     }  
-    //i do not take credit for this function i found it here : http://forums.devshed.com/php-development-5/how-to-preg-replace-on-multi-dimensional-array-463318.html
-   protected function preg_replace_array($pattern, $replacement, $subject, $limit=-1)
+    
+    //useless ******************************************************
+    protected function array_flatten(array $array)
+    {
+        $flat = array(); // initialize return array
+        $stack = array_values($array); // initialize stack
+        while($stack) // process stack until done
+        {
+            $value = array_shift($stack);
+            if (is_array($value)) // a value to further process
+            {
+                $stack = array_merge(array_values($value), $stack);
+            }
+            else // a value to take
+            {
+            $flat[] = $value;
+            }
+        }
+        return $flat;
+    }
+
+    protected function preg_replace_array($pattern, $replacement, $subject, $limit=-1)
     { 
         if (is_array($subject)) 
         { 
@@ -88,8 +111,8 @@ class BookManipulation extends HtmlOutput
             return preg_replace($pattern, $replacement, $subject, $limit); 
         } 
 
-    }
-    
+}
+    //this one is needed*************************************************
     protected function createfalse($input)
         {
             $exclude = '==========';

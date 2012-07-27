@@ -36,9 +36,13 @@ function pregTest()
     $replace = ' ';
     
     var_dump($inputString);
-    echo '<br><br>';
+    echo '************************';
     $test = preg_replace_array($pattern, $replace, $inputString);
-    var_dump($test);  
+    $test2 = array_flatten($test);
+    var_dump($test);
+    echo '************************';
+    var_dump($test2);
+    
     
 }
 
@@ -67,6 +71,24 @@ function testExplode()
     
 }
 
+function array_flatten(array $array)
+{
+    $flat = array(); // initialize return array
+    $stack = array_values($array); // initialize stack
+    while($stack) // process stack until done
+    {
+        $value = array_shift($stack);
+        if (is_array($value)) // a value to further process
+        {
+            $stack = array_merge(array_values($value), $stack);
+        }
+        else // a value to take
+        {
+           $flat[] = $value;
+        }
+    }
+    return $flat;
+}
 //teststrtok();
 
 //testargv();
