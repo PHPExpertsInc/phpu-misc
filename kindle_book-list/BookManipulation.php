@@ -62,7 +62,8 @@ class BookManipulation extends HtmlOutput
             
             var_dump($this -> flatlocationAuthorArray);           
             
-                      
+            
+            
         }
         else 
         {
@@ -81,6 +82,18 @@ class BookManipulation extends HtmlOutput
         //parent::createAuthor();
         //parent::createQuote();
     }  
+    
+
+//    function array_flatten($nested, $preserve_keys = false) {
+//$flat = array();
+//$collector = $preserve_keys ? function ($v, $k) use (&$flat) {
+//$flat[$k] = $v;
+//} : function ($v) use (&$flat) {
+//        $flat[] = $v;
+//};
+//array_walk_recursive($nested);
+//return $flat;
+//}
     
     protected function createfalse($input)
         {
@@ -106,5 +119,5 @@ function flattenArray($multi_array)
     {
         $flat_array[$k] = $v;
     }
-    return $flat_array();
+    return $flat_array;
 }
