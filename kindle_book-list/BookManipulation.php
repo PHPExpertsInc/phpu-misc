@@ -54,8 +54,7 @@ class BookManipulation extends HtmlOutput
             
             var_dump($this -> matches);
             
-            //figure out a way to not use a ulti array and finsh this damn thing!@!!!!!!!!!!!!!!!!!!!!!!!
-            
+                       
             
         }
         else 
