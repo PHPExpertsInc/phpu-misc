@@ -25,6 +25,7 @@ class BookManipulation extends HtmlOutput
     protected $quote;
     protected $locationAuthorDelim;
     protected $locationAuthorArray;
+    protected $flatLocationAuthorArray;
     Protected $replacePattern;
     protected $replace;
     protected $matches;
@@ -48,16 +49,18 @@ class BookManipulation extends HtmlOutput
             preg_match_all($this -> locationAuthorDelim, $this -> bufferstring, 
                      $this -> locationAuthorArray, PREG_PATTERN_ORDER);
             
-            //TODO: figure this out!!!!
+            $this -> flatLocationAuthorArray = $this -> flattenArray($this -> locationAuthorArray);
+
+//TODO: figure this out!!!!
             //repalce symbols 
             
-            $this -> replacePattern = '/[(|)]/U';
-            $this -> replace = '';
+            //$this -> replacePattern = '/[(|)]/U';
+            //$this -> replace = '';
                       
             //use preg replace now for replace () and ||
-            preg_replace($this->replacePattern, $this->replace, $this->locationAuthorArray);
+            //preg_replace($this->replacePattern, $this->replace, $this->locationAuthorArray);
             
-            var_dump($this -> locationAuthorArray);           
+            var_dump($this -> flatlocationAuthorArray);           
             
         }
         else 
@@ -66,8 +69,7 @@ class BookManipulation extends HtmlOutput
             //set delimiter
             $this -> delimiterType = '/\r\n|\r|\n/';
             
-            $this -> bookArray = preg_split($this -> delimiterType, $this -> 
-                    bufferstring);
+            $this -> bookArray = preg_split($this -> delimiterType, $this ->   bufferstring);
         }
         
         $this -> bookArray = array_filter($this -> bookArray, array($this, 
@@ -79,40 +81,27 @@ class BookManipulation extends HtmlOutput
         //parent::createQuote();
     }  
     
-    //useless ******************************************************
-    protected function array_flatten(array $array)
+    protected function flattenArray($multi_array)
     {
-        $flat = array(); // initialize return array
-        $stack = array_values($array); // initialize stack
-        while($stack) // process stack until done
+        $flat_array = array();
+        foreach(new RecursiveIteratorIterator(new RecursiveArrayIterator($multi_array)) as $k => $v)
         {
-            $value = array_shift($stack);
-            if (is_array($value)) // a value to further process
-            {
-                $stack = array_merge(array_values($value), $stack);
-            }
-            else // a value to take
-            {
-            $flat[] = $value;
-            }
+            $flat_array[$k] = $v;
         }
-        return $flat;
+        return $flat_array();
     }
-
-    protected function preg_replace_array($pattern, $replacement, $subject, $limit=-1)
-    { 
-        if (is_array($subject)) 
-        { 
-            foreach ($subject as &$value) $value=preg_replace_array($pattern, $replacement, $value, $limit); 
-            return $subject; 
-        } 
-        else 
-        { 
-            return preg_replace($pattern, $replacement, $subject, $limit); 
-        } 
-
-}
-    //this one is needed*************************************************
+    
+//    function array_flatten($nested, $preserve_keys = false) {
+//$flat = array();
+//$collector = $preserve_keys ? function ($v, $k) use (&$flat) {
+//$flat[$k] = $v;
+//} : function ($v) use (&$flat) {
+//        $flat[] = $v;
+//};
+//array_walk_recursive($nested);
+//return $flat;
+//}
+    
     protected function createfalse($input)
         {
             $exclude = '==========';
@@ -127,7 +116,6 @@ class BookManipulation extends HtmlOutput
             }
             return true;
         }
-    
     
 }
 
