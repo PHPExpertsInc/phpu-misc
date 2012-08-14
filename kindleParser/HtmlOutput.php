@@ -18,7 +18,7 @@ class HtmlOutput
     function createHTML()
     {
 
-        $this -> bookCount = count($this -> titleArray);
+        $this -> bookCount = count($this -> titleArray) - 1;
         $htmlArray = array();
         for($i=0; $i <= $this -> bookCount; $i++)
         {

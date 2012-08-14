@@ -89,11 +89,11 @@
           <file leaf-file-name="HtmlOutput.php" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/HtmlOutput.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="24" column="115" selection-start="517" selection-end="517" vertical-scroll-proportion="0.34615386">
+                <state line="21" column="29" selection-start="345" selection-end="345" vertical-scroll-proportion="0.34615386">
                   <folding>
-                    <marker date="1344985974885" expanded="true" signature="1037:1191" placeholder="..." />
-                    <marker date="1344985974885" expanded="true" signature="1045:1183" placeholder="..." />
-                    <marker date="1344985974885" expanded="true" signature="1297:1588" placeholder="..." />
+                    <marker date="1344986357961" expanded="true" signature="1041:1195" placeholder="..." />
+                    <marker date="1344986357961" expanded="true" signature="1049:1187" placeholder="..." />
+                    <marker date="1344986357961" expanded="true" signature="1301:1592" placeholder="..." />
                   </folding>
                 </state>
               </provider>
@@ -408,11 +408,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HtmlOutput.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="115" selection-start="517" selection-end="517" vertical-scroll-proportion="0.34615386">
+        <state line="21" column="29" selection-start="345" selection-end="345" vertical-scroll-proportion="0.34615386">
           <folding>
-            <marker date="1344985974885" expanded="true" signature="1037:1191" placeholder="..." />
-            <marker date="1344985974885" expanded="true" signature="1045:1183" placeholder="..." />
-            <marker date="1344985974885" expanded="true" signature="1297:1588" placeholder="..." />
+            <marker date="1344986357961" expanded="true" signature="1041:1195" placeholder="..." />
+            <marker date="1344986357961" expanded="true" signature="1049:1187" placeholder="..." />
+            <marker date="1344986357961" expanded="true" signature="1301:1592" placeholder="..." />
           </folding>
         </state>
       </provider>
