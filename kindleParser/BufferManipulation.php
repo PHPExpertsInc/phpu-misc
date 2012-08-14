@@ -20,6 +20,7 @@ class BufferManipulation extends HtmlOutput
     protected $titleArray;
     protected $locationArray;
     protected $quoteArray;
+    protected $typeOneInput;
     protected $typeTwoInput;
 
 
@@ -28,14 +29,17 @@ class BufferManipulation extends HtmlOutput
         if ($this -> fileType == 1)
         {
 //split by every line into an array
-            $delimiter = '/\r\n|\r|\n/';
-            $this -> inputFileArray = preg_split($delimiter, $this -> bufferstring);
+            $delimiter = '/(?:^|==========[\r\n]+)([^(\r\n]+) \(([^)]+)\)[\r\n]+- ([^|\r\n]+)(?: \|)? (Location ([^|]+)) \| Added on ([^\r\n]+)[\r\n]+([^=]+)/';
+            //'/(?:^|==========[\r\n]+)([^(\r\n]+) \(([^)]+)\)[\r\n]+- ([^|\r\n]+)(?: \|)? (Location ([^|]+)) \| Added on ([^\r\n]+)[\r\n]+([^\r\n]*)[\r\n+]/';
+                //'/\r\n|\r|\n/';
+            preg_match_all($delimiter, $this -> bufferstring, $this -> typeOneInput);
 
-            $this -> inputFileArrayToString = implode('*', $this -> inputFileArray);
+            //$this -> inputFileArrayToString = implode('*', $this -> inputFileArray);
+            //var_dump($this -> typeOneInput[7]);
         }
         elseif($this -> fileType == 2)
         {
-            $pattern='/(.+?)[\r\n]+([^\r\n]+)[\r\n]+=====/is';
+            $pattern = '/(.+?)[\r\n]+([^\r\n]+)[\r\n]+=====/is';
             preg_match_all($pattern, $this -> bufferstring, $this -> typeTwoInput);
 //$this -> typeTwoInput[1] = quote, [2] = author - title - Location string.
         }
@@ -52,20 +56,7 @@ class BufferManipulation extends HtmlOutput
         if($this -> fileType == 1)
         {
 //pull out every 5th item from inputFileArray (titles (authors))
-            $this -> titleAuthorArray = pick_Specific_elements($this -> inputFileArray, 5, 0);
-//implode and remove title from strings.
-            $titleAuthorArrayToString = implode('*', $this -> titleAuthorArray);
-
-            $titleDelimiter = '/\(?[^(*]+/';
-            preg_match_all($titleDelimiter, $titleAuthorArrayToString, $this -> titleArray);
-
-//flatten multi-array created by preg_match_all
-            $this -> titleArray = flattenArray($this -> titleArray);
-
-//pick even items which is titles odd are authors.
-            $this -> titleArray = pick_Specific_elements($this -> titleArray, 2, 0);
-
-            $this -> titleArray = array_merge($this -> titleArray);
+            $this -> titleArray = $this -> typeOneInput[1];
 
 //*************** finished - titles are in array $this -> titleArray *************
         }
@@ -82,11 +73,8 @@ class BufferManipulation extends HtmlOutput
     {
         if($this -> fileType == 1)
         {
-//implode to string and pull authors out
-            $authorDelimiter = '/={10}.+(\(.+\))/U';
-            preg_match_all($authorDelimiter, $this -> inputFileArrayToString, $matches);
-//remove ( and ) from author names.
-            $this -> authorArray = preg_replace('/[()]/U', '', $matches[1]);
+
+            $this -> authorArray = $this -> typeOneInput[2];
         }
         elseif($this -> fileType == 2)
         {
@@ -101,17 +89,7 @@ class BufferManipulation extends HtmlOutput
 
         if ($this -> fileType == 1)
         {
-//get location line first then turn array into string to run through preg_match_all then split.
-
-            $locationLineArray = preg_grep('/(\|.+\|)/', $this -> inputFileArray);
-
-            $locationLineArrayToString = implode("*", $locationLineArray);
-
-            preg_match_all('/\|.+\|/U', $locationLineArrayToString, $locationLineArray);
-
-            $this -> locationArray = flattenArray($locationLineArray);
-
-            $this -> locationArray = preg_replace('/\|/', "", $this -> locationArray);
+            $this -> locationArray = $this -> typeOneInput[4];
         }
         elseif($this -> fileType = 2)
         {
@@ -128,8 +106,18 @@ class BufferManipulation extends HtmlOutput
     {
         if($this -> fileType == 1)
         {
-            $this -> quoteArray = pick_Specific_elements($this -> inputFileArray, 5, 7);
-            $this -> quoteArray = array_merge($this -> quoteArray);
+            foreach( $this -> typeOneInput[7] as &$value)
+            {
+                if($value == null)
+                {
+                    $value = 'No Quote Available.';
+                }
+                elseif(strpos(trim($this -> typeOneInput[7]),"\n")!==false)
+                {
+
+                }
+            }
+            $this -> quoteArray = $this -> typeOneInput[7];
         }
         elseif($this -> fileType == 2)
         {
