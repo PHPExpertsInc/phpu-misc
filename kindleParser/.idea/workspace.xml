@@ -27,7 +27,7 @@
           <file leaf-file-name="kindle_parser.php" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/kindle_parser.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="21" column="56" selection-start="575" selection-end="576" vertical-scroll-proportion="-9.807693">
+                <state line="9" column="3" selection-start="301" selection-end="301" vertical-scroll-proportion="-5.8846154">
                   <folding />
                 </state>
               </provider>
@@ -62,10 +62,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="BufferManipulation.php" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="BufferManipulation.php" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/BufferManipulation.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="106" column="34" selection-start="3440" selection-end="3440" vertical-scroll-proportion="0.3794872">
+                <state line="112" column="51" selection-start="3627" selection-end="3627" vertical-scroll-proportion="-9.615385">
                   <folding>
                     <element signature="n#getTitle#0;n#BufferManipulation#0;n#!!top" expanded="false" />
                     <element signature="n#getAuthors#0;n#BufferManipulation#0;n#!!top" expanded="false" />
@@ -86,14 +86,14 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="HtmlOutput.php" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="HtmlOutput.php" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/HtmlOutput.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="29" column="41" selection-start="913" selection-end="913" vertical-scroll-proportion="-10.423077">
+                <state line="24" column="115" selection-start="517" selection-end="517" vertical-scroll-proportion="0.34615386">
                   <folding>
-                    <marker date="1344979406311" expanded="true" signature="940:1094" placeholder="..." />
-                    <marker date="1344979406311" expanded="true" signature="948:1086" placeholder="..." />
-                    <marker date="1344979406311" expanded="true" signature="1200:1491" placeholder="..." />
+                    <marker date="1344985974885" expanded="true" signature="1037:1191" placeholder="..." />
+                    <marker date="1344985974885" expanded="true" signature="1045:1183" placeholder="..." />
+                    <marker date="1344985974885" expanded="true" signature="1297:1588" placeholder="..." />
                   </folding>
                 </state>
               </provider>
@@ -145,17 +145,16 @@
         <option value="$PROJECT_DIR$/DetectFileType.php" />
         <option value="$PROJECT_DIR$/FileWork.php" />
         <option value="$PROJECT_DIR$/GetInput.php" />
-        <option value="$PROJECT_DIR$/kindle_parser.php" />
-        <option value="$PROJECT_DIR$/HtmlOutput.php" />
         <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/BufferManipulation.php" />
+        <option value="$PROJECT_DIR$/kindle_parser.php" />
+        <option value="$PROJECT_DIR$/HtmlOutput.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="563" />
-    <option name="y" value="1" />
+    <option name="x" value="582" />
     <option name="width" value="1328" />
     <option name="height" value="1050" />
   </component>
@@ -277,7 +276,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="563" y="1" width="1328" height="1050" extended-state="0" />
+    <frame x="582" y="0" width="1328" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -364,13 +363,6 @@
         <state line="19" column="5" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kindle_parser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="56" selection-start="575" selection-end="576" vertical-scroll-proportion="-9.807693">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FileWork.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="55" selection-start="183" selection-end="183" vertical-scroll-proportion="4.6538463">
@@ -387,17 +379,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HtmlOutput.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="41" selection-start="913" selection-end="913" vertical-scroll-proportion="-10.423077">
-          <folding>
-            <marker date="1344979406311" expanded="true" signature="940:1094" placeholder="..." />
-            <marker date="1344979406311" expanded="true" signature="948:1086" placeholder="..." />
-            <marker date="1344979406311" expanded="true" signature="1200:1491" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="29" selection-start="282" selection-end="282" vertical-scroll-proportion="-6.5384617">
@@ -409,11 +390,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BufferManipulation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="34" selection-start="3440" selection-end="3440" vertical-scroll-proportion="0.3794872">
+        <state line="112" column="51" selection-start="3627" selection-end="3627" vertical-scroll-proportion="-9.615385">
           <folding>
             <element signature="n#getTitle#0;n#BufferManipulation#0;n#!!top" expanded="false" />
             <element signature="n#getAuthors#0;n#BufferManipulation#0;n#!!top" expanded="false" />
             <element signature="n#getLocation#0;n#BufferManipulation#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kindle_parser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="3" selection-start="301" selection-end="301" vertical-scroll-proportion="-5.8846154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HtmlOutput.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="115" selection-start="517" selection-end="517" vertical-scroll-proportion="0.34615386">
+          <folding>
+            <marker date="1344985974885" expanded="true" signature="1037:1191" placeholder="..." />
+            <marker date="1344985974885" expanded="true" signature="1045:1183" placeholder="..." />
+            <marker date="1344985974885" expanded="true" signature="1297:1588" placeholder="..." />
           </folding>
         </state>
       </provider>

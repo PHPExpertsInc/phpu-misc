@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(E_ALL);
 /*
  * Kindle Snippets Parser, a PHPExperts.pro Project.
  * Copyright © 2012 PHP Experts, Inc.

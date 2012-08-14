@@ -22,8 +22,8 @@ class HtmlOutput
         $htmlArray = array();
         for($i=0; $i <= $this -> bookCount; $i++)
         {
-
-            $htmlArray[$i] = "<h2>" . $this -> titleArray[$i] . "</h2>\n<blockquote>" . $this -> quoteArray[$i] . "</blockquote>\n<p>— <a rel=\"external\" href=\"\">" . $this -> authorArray[$i] . "</a>, <a rel=\"external\" href=\"\">Author 2</a>. <a rel=\"external\" href=\"SHORT_URL\">" . $this -> titleArray[$i] . "</a> " . $this -> locationArray[$i] . "</p>\n<br>\n<!---NEW BOOK-->\n";
+            $quotehtml = "<blockquote>" . str_replace("\n", "</blockquote>\n<blockquote>", $this -> quoteArray[$i]) . "</blockquote>\n";
+            $htmlArray[$i] = "<h2>" . $this -> titleArray[$i] . "</h2>\n" .  $quotehtml . "<p>— <a rel=\"external\" href=\"\">" . $this -> authorArray[$i] . "</a>, <a rel=\"external\" href=\"\">Author 2</a>. <a rel=\"external\" href=\"SHORT_URL\">" . $this -> titleArray[$i] . "</a> " . $this -> locationArray[$i] . "</p>\n<br>\n<!---NEW BOOK-->\n";
         }
 //convert to string
         $htmlArrayToString = implode($htmlArray);
