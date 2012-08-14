@@ -62,10 +62,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="BufferManipulation.php" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="BufferManipulation.php" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/BufferManipulation.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="114" column="74" selection-start="3666" selection-end="3721" vertical-scroll-proportion="-10.269231">
+                <state line="106" column="34" selection-start="3440" selection-end="3440" vertical-scroll-proportion="0.3794872">
                   <folding>
                     <element signature="n#getTitle#0;n#BufferManipulation#0;n#!!top" expanded="false" />
                     <element signature="n#getAuthors#0;n#BufferManipulation#0;n#!!top" expanded="false" />
@@ -75,10 +75,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="test.php" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="test.php" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/test.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="12" column="1" selection-start="323" selection-end="323" vertical-scroll-proportion="0.5062035">
+                <state line="10" column="29" selection-start="282" selection-end="282" vertical-scroll-proportion="-6.5384617">
                   <folding>
                     <element signature="e#6#163#0" expanded="true" />
                   </folding>
@@ -115,7 +115,7 @@
           <file leaf-file-name="BufferManipulation.php" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/BufferManipulation.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="172" column="0" selection-start="4934" selection-end="4934" vertical-scroll-proportion="0.7054455">
+                <state line="168" column="0" selection-start="4821" selection-end="4821" vertical-scroll-proportion="0.7054455">
                   <folding />
                 </state>
               </provider>
@@ -147,8 +147,8 @@
         <option value="$PROJECT_DIR$/GetInput.php" />
         <option value="$PROJECT_DIR$/kindle_parser.php" />
         <option value="$PROJECT_DIR$/HtmlOutput.php" />
-        <option value="$PROJECT_DIR$/BufferManipulation.php" />
         <option value="$PROJECT_DIR$/test.php" />
+        <option value="$PROJECT_DIR$/BufferManipulation.php" />
       </list>
     </option>
   </component>
@@ -398,22 +398,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BufferManipulation.php">
+    <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="74" selection-start="3666" selection-end="3721" vertical-scroll-proportion="-10.269231">
+        <state line="10" column="29" selection-start="282" selection-end="282" vertical-scroll-proportion="-6.5384617">
           <folding>
-            <element signature="n#getTitle#0;n#BufferManipulation#0;n#!!top" expanded="false" />
-            <element signature="n#getAuthors#0;n#BufferManipulation#0;n#!!top" expanded="false" />
-            <element signature="n#getLocation#0;n#BufferManipulation#0;n#!!top" expanded="false" />
+            <element signature="e#6#163#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.php">
+    <entry file="file://$PROJECT_DIR$/BufferManipulation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="1" selection-start="323" selection-end="323" vertical-scroll-proportion="0.5062035">
+        <state line="106" column="34" selection-start="3440" selection-end="3440" vertical-scroll-proportion="0.3794872">
           <folding>
-            <element signature="e#6#163#0" expanded="true" />
+            <element signature="n#getTitle#0;n#BufferManipulation#0;n#!!top" expanded="false" />
+            <element signature="n#getAuthors#0;n#BufferManipulation#0;n#!!top" expanded="false" />
+            <element signature="n#getLocation#0;n#BufferManipulation#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>

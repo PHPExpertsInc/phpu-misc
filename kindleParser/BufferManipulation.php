@@ -112,10 +112,6 @@ class BufferManipulation extends HtmlOutput
                 {
                     $value = 'No Quote Available.';
                 }
-                elseif(strpos(trim($this -> typeOneInput[7]),"\n")!==false)
-                {
-
-                }
             }
             $this -> quoteArray = $this -> typeOneInput[7];
         }
