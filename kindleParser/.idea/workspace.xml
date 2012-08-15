@@ -21,109 +21,94 @@
     <favorites_list name="kindle_book-list" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="kindle_parser.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/kindle_parser.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="9" column="3" selection-start="301" selection-end="301" vertical-scroll-proportion="-5.8846154">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="GetInput.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/GetInput.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="6" column="55" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="FileWork.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/FileWork.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="5" column="55" selection-start="183" selection-end="183" vertical-scroll-proportion="4.6538463">
-                  <folding>
-                    <element signature="n#FileWork#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DetectFileType.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/DetectFileType.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="5" column="55" selection-start="159" selection-end="159" vertical-scroll-proportion="-0.65384614">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="BufferManipulation.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/BufferManipulation.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="112" column="51" selection-start="3627" selection-end="3627" vertical-scroll-proportion="-9.615385">
-                  <folding>
-                    <element signature="n#getTitle#0;n#BufferManipulation#0;n#!!top" expanded="false" />
-                    <element signature="n#getAuthors#0;n#BufferManipulation#0;n#!!top" expanded="false" />
-                    <element signature="n#getLocation#0;n#BufferManipulation#0;n#!!top" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="test.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="10" column="29" selection-start="282" selection-end="282" vertical-scroll-proportion="-6.5384617">
-                  <folding>
-                    <element signature="e#6#163#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="HtmlOutput.php" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/HtmlOutput.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="21" column="29" selection-start="345" selection-end="345" vertical-scroll-proportion="0.34615386">
-                  <folding>
-                    <marker date="1344986357961" expanded="true" signature="1041:1195" placeholder="..." />
-                    <marker date="1344986357961" expanded="true" signature="1049:1187" placeholder="..." />
-                    <marker date="1344986357961" expanded="true" signature="1301:1592" placeholder="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ShortURL.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ShortURL.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="19" column="5" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="BufferManipulation.php" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/BufferManipulation.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="168" column="0" selection-start="4821" selection-end="4821" vertical-scroll-proportion="0.7054455">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="kindle_parser.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kindle_parser.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="3" selection-start="301" selection-end="301" vertical-scroll-proportion="-5.8846154">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetInput.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GetInput.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="55" selection-start="184" selection-end="184" vertical-scroll-proportion="-0.65384614">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileWork.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FileWork.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="55" selection-start="183" selection-end="183" vertical-scroll-proportion="4.6538463">
+              <folding>
+                <element signature="n#FileWork#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DetectFileType.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DetectFileType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="55" selection-start="159" selection-end="159" vertical-scroll-proportion="-0.65384614">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BufferManipulation.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BufferManipulation.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="43" selection-start="381" selection-end="381" vertical-scroll-proportion="21.576923">
+              <folding>
+                <element signature="n#BufferManipulation#0;n#!!top" expanded="true" />
+                <element signature="n#getTitle#0;n#BufferManipulation#0;n#!!top" expanded="false" />
+                <element signature="n#getAuthors#0;n#BufferManipulation#0;n#!!top" expanded="false" />
+                <element signature="n#getLocation#0;n#BufferManipulation#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="29" selection-start="282" selection-end="282" vertical-scroll-proportion="-6.5384617">
+              <folding>
+                <element signature="e#6#163#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HtmlOutput.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HtmlOutput.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="49" selection-start="395" selection-end="395" vertical-scroll-proportion="0.4384525">
+              <folding>
+                <element signature="e#7#106#0" expanded="true" />
+                <marker date="1344986357961" expanded="true" signature="1041:1195" placeholder="..." />
+                <marker date="1344986357961" expanded="true" signature="1049:1187" placeholder="..." />
+                <marker date="1344986357961" expanded="true" signature="1301:1592" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShortURL.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ShortURL.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="5" selection-start="333" selection-end="333" vertical-scroll-proportion="-7.0384617">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -277,7 +262,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="582" y="0" width="1328" height="1050" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -353,14 +338,18 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/GetInput.php">
+    <entry file="file://$PROJECT_DIR$/kindle_parser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="55" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" />
+        <state line="9" column="3" selection-start="301" selection-end="301" vertical-scroll-proportion="-5.8846154">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ShortURL.php">
+    <entry file="file://$PROJECT_DIR$/GetInput.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="5" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0" />
+        <state line="6" column="55" selection-start="184" selection-end="184" vertical-scroll-proportion="-0.65384614">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FileWork.php">
@@ -379,6 +368,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BufferManipulation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="43" selection-start="381" selection-end="381" vertical-scroll-proportion="21.576923">
+          <folding>
+            <element signature="n#BufferManipulation#0;n#!!top" expanded="true" />
+            <element signature="n#getTitle#0;n#BufferManipulation#0;n#!!top" expanded="false" />
+            <element signature="n#getAuthors#0;n#BufferManipulation#0;n#!!top" expanded="false" />
+            <element signature="n#getLocation#0;n#BufferManipulation#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="29" selection-start="282" selection-end="282" vertical-scroll-proportion="-6.5384617">
@@ -388,28 +389,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BufferManipulation.php">
+    <entry file="file://$PROJECT_DIR$/ShortURL.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="51" selection-start="3627" selection-end="3627" vertical-scroll-proportion="-9.615385">
-          <folding>
-            <element signature="n#getTitle#0;n#BufferManipulation#0;n#!!top" expanded="false" />
-            <element signature="n#getAuthors#0;n#BufferManipulation#0;n#!!top" expanded="false" />
-            <element signature="n#getLocation#0;n#BufferManipulation#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kindle_parser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="3" selection-start="301" selection-end="301" vertical-scroll-proportion="-5.8846154">
+        <state line="19" column="5" selection-start="333" selection-end="333" vertical-scroll-proportion="-7.0384617">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HtmlOutput.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="29" selection-start="345" selection-end="345" vertical-scroll-proportion="0.34615386">
+        <state line="22" column="49" selection-start="395" selection-end="395" vertical-scroll-proportion="0.4384525">
           <folding>
+            <element signature="e#7#106#0" expanded="true" />
             <marker date="1344986357961" expanded="true" signature="1041:1195" placeholder="..." />
             <marker date="1344986357961" expanded="true" signature="1049:1187" placeholder="..." />
             <marker date="1344986357961" expanded="true" signature="1301:1592" placeholder="..." />

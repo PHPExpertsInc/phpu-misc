@@ -11,3 +11,19 @@ HOW TO USE:
 	arg2 = Output File ( file name and path eg. "/forder1/forlder2/test.html" or "./test.html")
 
 3. Enjoy!
+
+===============
+INCLUDED FILES
+===============
+
+BufferManipulation.php
+
+DetectFileType.php
+
+FileWork.php
+
+GetInput.php
+
+HTMLOutput.php
+
+KindleParser.php
