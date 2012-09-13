@@ -32,7 +32,5 @@ elseif(preg_match('/.+\.html/', $argv[2]) !== 1)
 
 $UserIO = new getInput();
 
-$UserIO -> getUserinput($argv[1], $argv[2]);
+$UserIO->getUserinput($argv[1], $argv[2]);
 
-
-?>

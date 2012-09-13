@@ -21,8 +21,8 @@ class GetInput extends FileWork
     public function getUserinput($snippetFile, $htmlOutput)
     {
 
-      $this -> inputFile = $snippetFile;  //set user input to variable.
-      $this -> outputFile = $htmlOutput;  //set user chosen output file
+      $this->inputFile = $snippetFile;  //set user input to variable.
+      $this->outputFile = $htmlOutput;  //set user chosen output file
 
       parent::reader();
     }

@@ -29,15 +29,15 @@ class DetectFileType extends BufferManipulation
     {
         $pattern = '/==========/';
         
-        if (preg_match($pattern, $this -> bufferstring) == '1')
+        if (preg_match($pattern, $this->bufferstring) == '1')
         {
             //set file type to Type 1
-            $this -> fileType = '1';
+            $this->fileType = '1';
         }
         else
         {
             //set file type Type 2
-            $this -> fileType = '2';
+            $this->fileType = '2';
         }
 
         parent::bufferStringToArray();

@@ -21,13 +21,13 @@ class FileWork extends DetectFileType
     protected function reader()
     {
 
-        $this -> filename = $this -> inputFile;
+        $this->filename = $this->inputFile;
 //open file
-        $this -> buffer = fopen($this -> filename, $this -> mode);
+        $this->buffer = fopen($this->filename, $this->mode);
 //turn buffer into one giant string.
-        $this -> bufferstring = stream_get_contents($this -> buffer);
+        $this->bufferstring = stream_get_contents($this->buffer);
 
-        fclose($this -> buffer);
+        fclose($this->buffer);
         parent::setFileType();
     }        
 }
